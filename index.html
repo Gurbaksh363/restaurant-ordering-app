@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <h3>The best burgers and pizzas in town.</h2>
+        </header>
+        
+        <main>
+            <section id="menu-items">
+            </section>
+            
+            <section id="order-section" class="order hidden">
+                <h2>Your Order</h2>
+                <div id="order-details-wrapper" class="order-details-wrapper">
+                </div>
+                <div class="total-price-wrapper">
+                        <span>Total price:</span>
+                        <span id="price"></span>
+                </div>
+                <button id="order-btn" class="order-btn">Complete order</button>
+            </section>
+            
+            <section id="payment-section" class="payment-section hidden">
+                <h2 class="payment-title">Enter Card Details</h2>
+                <form id="payment-form">
+                    <input type="text" name="username" placeholder="Enter your name" aria-label="Enter your name" required>
+                    <input type="text" name="card" placeholder="Enter card number" aria-label="Enter card number" required>
+                    <input type="text" name="cvv" placeholder="Enter CVV" aria-label="Enter CVV" required>
+                    <button id="payment-form-btn" class="payment-form-btn">Pay</button>
+                </form>
+            </section>
+            
+            <section id="order-placed-section" class="order-placed-section hidden">
+                
+            </section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

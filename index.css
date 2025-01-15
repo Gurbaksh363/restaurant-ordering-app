@@ -1,0 +1,129 @@
+*{
+  box-sizing: border-box;    
+}  
+body {
+    margin: 0;
+    font-family: "Smythe", serif;
+    font-weight: lighter;
+} 
+
+header{
+    background-image: url("images/banner.png");
+    background-size: cover;
+    color: white;
+    padding: 30px;
+}
+h1, h2, h3{
+    margin: 0;
+    font-weight: lighter;
+}
+h1{
+    font-size: 40px;
+}
+
+/* menu items section */
+
+.menu-item-container{
+    margin: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.menu-item-emoji{
+    font-size: 70px;
+}
+.menu-item-desc{
+    margin-top: 0;
+    color: #8B8B8B;
+}
+.menu-item-add-btn{
+    margin-left: auto;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+    width: 50px;
+    height: 50px;
+}
+
+/* order detail section */
+
+.order{
+    text-align: center;
+    padding: 0 50px;
+    padding-bottom: 20px;
+}
+
+.order-items{
+    list-style: none;
+    font-size: larger;
+}
+.order-item,
+.total-price-wrapper{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.total-price-wrapper{
+    border-top: 2px solid black;
+}
+.remove-btn{
+    color: #BBBBBB;
+    background-color: white;
+    border: none;
+    font-size: 10px;
+}
+/* buttons */
+.order-btn,
+.payment-form-btn{
+    background-color: #16DB99;
+    border: none;
+    padding: 15px 0;
+    width: 250px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Payment form*/
+.payment-section{
+    width: 300px;
+    position: fixed;
+    top: 200px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    box-shadow: 0px 0px 200px gray;
+}
+.payment-title{
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+input{
+    width: 250px;
+    padding: 10px ;
+    margin: 7px 0;
+}
+input::placeholder{
+    font-family: inherit;
+    font-size: small;
+}
+
+
+/*  order placed msg */
+.order-placed-msg-wrapper{
+    background-color: #ECFDF5;
+    color: #065F46;
+    padding: 5px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
